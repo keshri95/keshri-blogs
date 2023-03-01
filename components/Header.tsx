@@ -12,18 +12,24 @@ const Header = () => {
             src="https://avatars.githubusercontent.com/u/69101383?v=4"
             width={50}
             height={50}
-            alt="papafam"
+            alt="ashish"
           />
         </Link>
         <h1>Ashish Keshri</h1>
       </div>
 
-      <div>
+      <div className="flex space-x-2">
         <Link
-          href="/"
+          href="https://github.com/keshri95"
           className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#f7ab0a] flex items-center rounded-full text-center"
         >
-          Sign up
+          GitHub
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/ashish-keshri-b1a250188/"
+          className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#f7ab0a] flex items-center rounded-full text-center"
+        >
+          LinkdeIn
         </Link>
       </div>
     </header>

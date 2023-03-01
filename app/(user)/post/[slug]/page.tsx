@@ -3,7 +3,8 @@ import Image from "next/image";
 import { client } from "../../../../lib/sanity.client";
 import urlFor from "../../../../lib/urlFor";
 import { PortableText } from "@portabletext/react";
-import { RichTextComponents } from "@/components/RichTextComponents";
+// import { RichTextComponents } from "@/components/RichTextComponents";
+import {RichTextComponents} from "../../../../components/RichTextComponents";
 
 type Props = {
   params: {
@@ -41,7 +42,6 @@ async function Post({ params: { slug } }: Props) {
     `;
 
   const post: Post = await client.fetch(query, { slug });
-
   return (
     <article className="px-19 pb-28">
       <section className="space-y-2 border text-white border-[#f7ab0a] ">
@@ -54,13 +54,14 @@ async function Post({ params: { slug } }: Props) {
               fill
             />
           </div>
+         
 
           <section className="p-5 bg-[#f7ab0a] w-full">
             <div className="flex flex-col md:flex-row justify-between gap-y-5">
               <div>
                 <h1 className="text-4xl font-extrabold">{post.title}</h1>
                 <p>
-                  {new Date(post._createdAt).toLocaleDateString("en-UI", {
+                  {new Date(post._createdAt).toLocaleDateString("en-US", {
                     day: "numeric",
                     month: "long",
                     year: "numeric",
@@ -68,6 +69,7 @@ async function Post({ params: { slug } }: Props) {
                 </p>
               </div>
               <div className="flex items-center space-x-2">
+                {/* {urlFor(post.author.image).url()} */}
                 <Image
                   className="rounded-full"
                   src={urlFor(post.author.image).url()}
