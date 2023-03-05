@@ -12,8 +12,6 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
 
 export default defineConfig({
   basePath: "/studio",
-  name: "PAPAFORM_Content_Studio",
-  title: "PAPAFORM_Content_Studio",
 
   projectId,
   dataset,

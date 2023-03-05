@@ -6,15 +6,15 @@ const Banner = () => {
       <div>
         <h1 className="text-7xl">Keshri Blog</h1>
         <h2 className="mt-5 md:mt-0">
-          Welcome to my blog
+        I am Ashish Keshri, a self taught 
           <span className="underline decoration-4 decoration-[#f7ab0a]">
-            Every Developers
+          Web Developer
           </span>
-           Amazing Blogs
+        from Bangalore.
         </h2>
       </div>
       <p className="mt-5 md:mt-2 text-gray-400 max-w-sm">
-        I posts blogs about Developers commonly use in real life problems:
+      I am quite confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
       </p>
     </div>
   );
